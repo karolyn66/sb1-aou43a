@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weltkarte Map</title>
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <div>
+                <h1>weltkartemap.de</h1>
+                <p>weltkarte online ansehen</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <div class="dropdown">
+                <button class="dropbtn">Landseite</button>
+                <div class="dropdown-content">
+                    <a href="#">Weltkarte</a>
+                    <a href="#">Europa Karte</a>
+                    <a href="#">Afrika Karte</a>
+                    <!-- Add more menu items here -->
+                </div>
+            </div>
+            <button id="searchBtn">Suche</button>
+            <div class="dropdown">
+                <button class="dropbtn">DE</button>
+                <div class="dropdown-content">
+                    <a href="#">DE Deutsch</a>
+                    <a href="#">EN English</a>
+                    <!-- Add more language options here -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Weltkarte</h1>
+        <div id="map"></div>
+
+        <section class="regions">
+            <h2>Regionen</h2>
+            <div class="region-grid">
+                <a href="#" class="region-item">Europa</a>
+                <a href="#" class="region-item">Afrika</a>
+                <a href="#" class="region-item">Asien</a>
+                <a href="#" class="region-item">Südamerika</a>
+                <a href="#" class="region-item">Nordamerika</a>
+                <a href="#" class="region-item">Antarktis</a>
+                <a href="#" class="region-item">Ozeanien</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Über die Weltkarte</h2>
+            <p>Die Weltkarte ist eine faszinierende Darstellung unseres Planeten Erde. Sie zeigt die Verteilung von Land und Wasser, die Grenzen zwischen Ländern und die vielfältigen geografischen Merkmale, die unsere Welt ausmachen.</p>
+            <p>Entdecken Sie die verschiedenen Kontinente, Ozeane und Länder, und erfahren Sie mehr über die Geografie unserer Erde.</p>
+        </section>
+
+        <section class="popular-articles">
+            <h2>Beliebte Artikel</h2>
+            <div class="article-grid">
+                <!-- Add article previews here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Über uns</h3>
+                <p>Weltkarte Map bietet interaktive Karten und Informationen über verschiedene Regionen der Welt.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Schnelle Links</h3>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#">Weltkarte</a></li>
+                    <li><a href="#">Europa</a></li>
+                    <li><a href="#">Asien</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Email: info@weltkartemap.de</p>
+                <p>Telefon: +49 123 456789</p>
+            </div>
+            <div class="footer-section">
+                <img src="https://via.placeholder.com/50" alt="Logo">
+                <h2>weltkartemap.de</h2>
+                <p>weltkarte online ansehen</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 weltkartemap.de. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="indexjs.js"></script>
+</body>
+</html>

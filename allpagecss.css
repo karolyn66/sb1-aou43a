@@ -1,0 +1,68 @@
+/* Include the same reset and base styles as in indexcss.css */
+
+/* Header and footer styles should be the same as in indexcss.css */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    gap: 2rem;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+.article-list {
+    flex: 3;
+}
+
+article {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article h2 {
+    margin-bottom: 0.5rem;
+}
+
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar, .article-list {
+        width: 100%;
+    }
+}
